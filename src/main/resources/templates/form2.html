@@ -1,0 +1,10 @@
+<html>
+<body>
+	<h3>Add Person</h3>
+    <form action="#" th:action="@{/web/addPerson}" th:object="${personForm2}" method="post">
+        <p>Name: <input type="text" th:field="*{name}" /></p>
+        <p>Age: <input type="text" th:field="*{age}" /></p>
+        <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
+    </form>
+</body>
+</html>
